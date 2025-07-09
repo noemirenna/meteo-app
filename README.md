@@ -61,7 +61,22 @@ docker build -t meteo-app .
 docker run -p 8080:8080 meteo-app
 ```
 
-## Esecuzione con Docker Compose
+## ##  Come Avviare il Progetto
+
+###  Clona il progetto
+
+```bash
+git clone https://github.com/noemirenna/meteo-app.git
+
+```
+```bash
+cd meteo-app
+```
+Apri il terminale nella cartella principale del progetto e digita:
+
+```bash
+docker build -t meteo-app .
+```
 
 ###  Costruzione e avvio del container
 
