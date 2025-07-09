@@ -45,6 +45,9 @@ meteo/
 
 ```bash
 git clone https://github.com/noemirenna/meteo-app.git
+
+```
+```bash
 cd meteo-app
 ```
 Apri il terminale nella cartella principale del progetto e digita:
