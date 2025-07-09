@@ -61,7 +61,7 @@ docker build -t meteo-app .
 docker run -p 8080:8080 meteo-app
 ```
 
-## ##  Come Avviare il Progetto
+## Come Avviare il Progetto
 
 ###  Clona il progetto
 
