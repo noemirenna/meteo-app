@@ -61,6 +61,16 @@ docker build -t meteo-app .
 docker run -p 8080:8080 meteo-app
 ```
 
+## Esecuzione con Docker Compose
+
+###  Costruzione e avvio del container
+
+Con Docker Compose puoi costruire ed eseguire il progetto con un solo comando:
+
+```bash
+docker-compose up --build
+```
+
 L'app sarà disponibile su:
 
 http://localhost:8080
