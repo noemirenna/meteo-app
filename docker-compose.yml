@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  meteo-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: meteo-app
+    ports:
+      - "8080:8080"
