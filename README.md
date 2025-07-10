@@ -1,6 +1,6 @@
 #  Meteo App - Applicazione Meteo con Spring Boot
 
-Meteo City è una semplice applicazione web sviluppata con **Spring Boot** che consente di visualizzare le temperature orarie di alcune città italiane tramite l’API di [Open-Meteo](https://open-meteo.com). Il progetto è contenuto all’interno di un'immagine Docker per una più facile esecuzione.
+Meteo App è una semplice applicazione web sviluppata con **Spring Boot** che consente di visualizzare le temperature orarie di alcune città italiane tramite l’API di [Open-Meteo](https://open-meteo.com). Il progetto è contenuto all’interno di un'immagine Docker per una più facile esecuzione.
 
 ---
 
@@ -54,6 +54,8 @@ meteo/
 
 Per poter utilizzare l'applicazione Meteo App, assicurati di avere Docker Desktop installato sul tuo computer.
 
+---
+
 ##  Come Avviare il Progetto
 
 ###  Clona il progetto
@@ -77,7 +79,7 @@ docker build -t meteo-app .
 docker run -p 8080:8080 meteo-app
 ```
 
-## Come Avviare il Progetto
+## Come Avviare il Progetto (con docker-compose)
 
 ###  Clona il progetto
 
@@ -88,11 +90,6 @@ git clone https://github.com/noemirenna/meteo-app.git
 ```bash
 cd meteo-app
 ```
-Apri il terminale nella cartella principale del progetto e digita:
-
-```bash
-docker build -t meteo-app .
-```
 
 ###  Costruzione e avvio del container
 
@@ -102,10 +99,11 @@ Con Docker Compose puoi costruire ed eseguire il progetto con un solo comando:
 docker-compose up --build
 ```
 
-L'app sarà disponibile su:
+---
+
+## L'app sarà disponibile su:
 
 http://localhost:8080
-
 
 ---
 
