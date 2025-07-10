@@ -13,13 +13,25 @@ Meteo City è una semplice applicazione web sviluppata con **Spring Boot** che c
 
 ---
 
+##  Città visualizzate
+
+- Roma
+- Torino
+- Napoli
+- Milano
+- Salerno
+- Matinella
+
+---
+
 ##  Tecnologie Utilizzate
 
-- Java 17
-- Spring Boot
-- Maven
-- Docker
-- Thymeleaf (per il frontend)
+- Java 17 : Linguaggio di programmazione principale.
+- Spring Boot : Framework per lo sviluppo rapido dell'applicazione web.
+- Maven : Strumento per la gestione del progetto e delle dipendenze.
+- Docker : Per la containerizzazione dell'applicazione.
+- Thymeleaf (per il frontend) : Motore di template per la generazione delle pagine HTML dinamiche.
+- Chart.js : Libreria JavaScript per la creazione di grafici sul frontend.
 
 ---
 
@@ -36,8 +48,11 @@ meteo/
 ├── Dockerfile
 └── README.md
 
-
 ---
+
+## Prerequisiti
+
+Per poter utilizzare l'applicazione Meteo App, assicurati di avere Docker Desktop installato sul tuo computer.
 
 ##  Come Avviare il Progetto
 
@@ -50,12 +65,13 @@ git clone https://github.com/noemirenna/meteo-app.git
 ```bash
 cd meteo-app
 ```
+2. Costruisci l'immagine Docker
 Apri il terminale nella cartella principale del progetto e digita:
 
 ```bash
 docker build -t meteo-app .
 ```
-2. Avvio del container
+3. Avvia il container Docker
 
 ```bash
 docker run -p 8080:8080 meteo-app

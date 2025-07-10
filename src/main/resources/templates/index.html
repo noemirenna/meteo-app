@@ -3,9 +3,70 @@
 <head>
     <title>Meteo Open-Meteo</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Custom CSS for the Inter font and basic body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        label {
+            margin-right: 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        select#citySelect {
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        select#citySelect:hover {
+            border-color: #007bff;
+            box-shadow: 0 4px 8px rgba(0,123,255,0.2);
+        }
+
+        select#citySelect:focus {
+            outline: none;
+            border-color: #0056b3;
+            box-shadow: 0 0 0 3px rgba(0,123,255,0.25);
+        }
+
+        canvas#tempChart {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-top: 40px;
+            padding: 20px;
+            max-width: 90%;
+            height: auto;
+        }
+        canvas {
+            max-width: 100%; 
+            height: auto; 
+        }
+    </style>
 </head>
 <body>
-<h1>Meteo giornaliero con Open-Meteo</h1>
+<h1>Dati meteo con Open-Meteo</h1>
 
 <label for="citySelect">Seleziona una città:</label>
 <select id="citySelect" onchange="fetchWeather()">
@@ -77,8 +138,8 @@
                 datasets: [{
                     label: `Temperatura oggi a ${city}`,
                     data: filteredTemps,
-                    borderColor: 'blue',
-                    backgroundColor: 'lightblue',
+                    borderColor: 'black',
+                    backgroundColor: 'lightgray',
                     tension: 0.3,
                     fill: true
                 }]
